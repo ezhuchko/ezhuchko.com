@@ -1,4 +1,4 @@
-![Image of me](./images/me.jpg | width=100)
+<a href="url"><img src="./images/me.jpg" align="left" height="48" width="48" ></a>
 
 ## About me
 
