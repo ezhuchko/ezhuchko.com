@@ -1,4 +1,4 @@
-![Image of me](me.jpg)
+![Image of me](./images/me.jpg)
 
 ## About me
 
