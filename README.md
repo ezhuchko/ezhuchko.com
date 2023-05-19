@@ -5,11 +5,6 @@ title: Ekaterina Zhuchko's CV
 # Ekaterina Zhuchko
 PhD student at Tallinn University of Technology.
 
-<div id="ezhuchko.github.io">
-<a href="ekaterina.zhuchko@taltech.ee">ekaterina.zhuchko@taltech.ee</a>
-</div>
-
-
 ## Currently
 
 Hello, I'm Kat! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm. 
