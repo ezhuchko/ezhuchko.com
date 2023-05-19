@@ -7,8 +7,7 @@
 <h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Education_8"></a>Education</h2>
 <p class="has-line-data" data-line-start="10" data-line-end="12"><code>2019-2022.</code><br>
 <strong>Master’s degree @ Tallinn University of Technology &amp; University of Tartu.</strong></p>
-<p class="has-line-data" data-line-start="13" data-line-end="15"><code>September 2022-now.</code><br>
-<strong>PhD @ Tallinn University of Technology.</strong></p>
+<p class="has-line-data" data-line-start="13" data-line-end="15"><code>September 2022-now.</code><br><strong>PhD @ Tallinn University of Technology.</strong></p>
 
 
 
