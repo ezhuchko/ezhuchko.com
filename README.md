@@ -5,7 +5,7 @@ title: Ekaterina Zhuchko's CV
 # Ekaterina Zhuchko
 PhD student at Tallinn University of Technology.
 
-<div id="webaddress">
+<div id="ezhuchko.github.io">
 <a href="ekaterina.zhuchko@taltech.ee">ekaterina.zhuchko@taltech.ee</a>
 </div>
 
