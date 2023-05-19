@@ -18,13 +18,4 @@ __Tallinn University of Technology & University of Tartu, Estonia.__
 __Tallinn University of Technology, Estonia__
 
 
-## Publications
-
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-
-<!-- ### Footer
-
-Last updated: May 2023 -->
-
 
