@@ -1,34 +1,105 @@
-<a href="url"><img src="./images/me.jpg" align="left" width="300" ></a>
-<h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="About_me_0"></a>About me</h2>
-<p class="has-line-data" data-line-start="2" data-line-end="3">Hello, I’m Kat! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm.</p>
-<h3 class="code-line" data-line-start=4 data-line-end=5 ><a id="Research_interests_4"></a>Research interests</h3>
-<p class="has-line-data" data-line-start="6" data-line-end="7">My main research interests are in automata theory, cryptography and formal methods.</p>
-<h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Education_8"></a>Education</h2>
-<p class="has-line-data" data-line-start="10" data-line-end="12"><code>2019-2022.</code><br>
-<strong>Master’s degree @ Tallinn University of Technology &amp; University of Tartu.</strong></p>
-<p class="has-line-data" data-line-start="13" data-line-end="15"><code>September 2022-now.</code><br>
-<strong>PhD @ Tallinn University of Technology.</strong></p>
-<h2 class="code-line" data-line-start=16 data-line-end=17 ><a id="Contact_details_16"></a>Contact details</h2>
-<p class="has-line-data" data-line-start="17" data-line-end="18"><a href="mailto:ekaterina.zhuchko@ttu.ee">ekaterina.zhuchko@ttu.ee</a></p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face {
+  font-family: 'Bigelow';
+  src: url('Bigelow.ttf') format('truetype');
+  /* Add additional font properties here if needed */
+}
 
-<!-- 
-<div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-  <br><br>
-  <h1>Kat Zhuchko</h1>
-  <hr />
-  <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="About_me_0"></a>About me</h2>
-  <p class="has-line-data" data-line-start="2" data-line-end="3">Hello, I’m Kat! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm.</p>
-  <h3 class="code-line" data-line-start=4 data-line-end=5 ><a id="Research_interests_4"></a>Research interests</h3>
-<p class="has-line-data" data-line-start="6" data-line-end="7">My main research interests are in automata theory, cryptography and formal methods.</p>
-<h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Education_8"></a>Education</h2>
-<p class="has-line-data" data-line-start="10" data-line-end="12"><code>2019-2022.</code><br>
-<strong>Master’s degree @ Tallinn University of Technology &amp; University of Tartu.</strong></p>
-<p class="has-line-data" data-line-start="13" data-line-end="15"><code>September 2022-now.</code><br>
-<strong>PhD @ Tallinn University of Technology.</strong></p>
-<h2 class="code-line" data-line-start=16 data-line-end=17 ><a id="Contact_details_16"></a>Contact details</h2>
-<p class="has-line-data" data-line-start="17" data-line-end="18"><a href="mailto:ekaterina.zhuchko@ttu.ee">ekaterina.zhuchko@ttu.ee</a></p>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  display: flex;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #f7e4e8;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.image-section {
+  flex: 0 0 300px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.text-section {
+  flex: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.heart-svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.name {
+  color: #ff9d9d;
+  width: "100%";
+  text-align: center;
+  margin: 8px;
+  font-size: 4em;
+  font-family: 'Bigelow';
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 id="name" class="name">Ekaterina Zhuchko
+    <img class="heart-svg" src="heart.svg" alt="Embedded SVG" />
+  </h1>
+  <div class="content">
+ <div class="image-section">
+    <a href="url"><img src="./images/me.jpg"></a>  
+  </div>
+  <div class="text-section">
+    <h2 id="about-me">💭 About me</h2>
+    <p>Hello, I’m Kat! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm.</p>
+    <h2 id="research-interests">🔬 Research interests</h3>
+    <p>My main research interests are in automata theory, cryptography, and formal methods.</p>
+    <h2 id="education">🎓 Education</h2>
+    <p><code>2019-2022.</code><br>
+      <strong>Master’s degree @ 🇪🇪 Tallinn University of Technology &amp; University of Tartu.</strong></p>
+    <p><code>September 2022-now.</code><br>
+      <strong>PhD @ 🇪🇪 Tallinn University of Technology.</strong></p>
+    <h2 id="contact-details">💌 Contact details</h2>
+    <p><a href="mailto:ekaterina.zhuchko@ttu.ee">ekaterina.zhuchko@ttu.ee</a></p>
+  </div></div>
 </div>
-<div class="right"></div>
-<div id="footer"> -->
+</body>
+</html>
