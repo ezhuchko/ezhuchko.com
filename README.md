@@ -1,4 +1,4 @@
-![Image of me](blob:https://web.telegram.org/d998fb53-1e20-48ec-a1a7-47aa9a2da690)
+![Image of me](chrome://global/skin/media/imagedoc-darknoise.png)
 
 ## About me
 
