@@ -10,10 +10,10 @@ My main research interests are in automata theory, cryptography and formal metho
 
 ## Education
 
-`2019-2022`
+`2019-2022. Master's degree.`
 __Tallinn University of Technology & University of Tartu.__
 
-`September 2022-now`
+`September 2022-now. PhD.`
 __Tallinn University of Technology.__
 
 
