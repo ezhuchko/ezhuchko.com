@@ -1,4 +1,4 @@
-<a href="url"><img src="./images/me.jpg" align="left" width="200" ></a>
+<a href="url"><img src="./images/me.jpg" align="left" width="300" ></a>
 
 ## About me
 
@@ -10,11 +10,11 @@ My main research interests are in automata theory, cryptography and formal metho
 
 ## Education
 
-`2019-2022. Master's degree.`
-__Tallinn University of Technology & University of Tartu.__
+`2019-2022.`
+__Master's degree at Tallinn University of Technology & University of Tartu.__
 
-`September 2022-now. PhD.`
-__Tallinn University of Technology.__
+`September 2022-now.`
+__PhD at Tallinn University of Technology.__
 
 
 
