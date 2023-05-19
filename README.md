@@ -1,7 +1,3 @@
----
-layout: cv
-title: Ekaterina Zhuchko's CV
----
 # Ekaterina Zhuchko
 PhD student at Tallinn University of Technology.
 
