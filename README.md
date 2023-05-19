@@ -12,7 +12,7 @@ PhD student at Tallinn University of Technology.
 
 ## Currently
 
-Hello, it's Kat here! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm. 
+Hello, I'm Kat! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm. 
 
 ### Research interests
 
