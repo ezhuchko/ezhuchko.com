@@ -1,4 +1,4 @@
-<a href="url"><img src="./images/me.jpg" align="left" height="30" width="30" ></a>
+<a href="url"><img src="./images/me.jpg" align="left" height="40" width="40" ></a>
 
 ## About me
 
