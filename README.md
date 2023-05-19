@@ -1,7 +1,6 @@
-# Ekaterina Zhuchko
-PhD student at Tallinn University of Technology.
+![Image of me](blob:https://web.telegram.org/d998fb53-1e20-48ec-a1a7-47aa9a2da690)
 
-## Currently
+## About me
 
 Hello, I'm Kat! I am currently a PhD student in the Laboratory for Compositional Systems and Methods at Tallinn University of Technology under the supervision of Paweł Sobociński and Hellis Tamm. 
 
