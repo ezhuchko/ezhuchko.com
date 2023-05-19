@@ -1,4 +1,4 @@
-![Image of me](chrome://global/skin/media/imagedoc-darknoise.png)
+![Image of me](me.png)
 
 ## About me
 
