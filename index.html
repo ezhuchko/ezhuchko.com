@@ -1,137 +1,211 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-@font-face {
-  font-family: 'Bigelow';
-  src: url('Bigelow.ttf') format('truetype');
-}
+  <style>
+    @font-face {
+      font-family: 'Bigelow';
+      src: url('Bigelow.ttf') format('truetype');
+    }
 
-/* Navigation Bar Styles */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ab85ad; 
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ac98b2;
+      margin: 0;
+      padding: 0;
+    }
 
-nav ul li {
-    float: left;
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ab85ad; 
+    }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+    nav ul li {
+      float: left;
+    }
 
-nav ul li a:hover {
-    background-color: #7d3180; 
-}
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #222020; */
-  background-color: #ac98b2;
-}
+    nav ul li a:hover {
+      background-color: #7d3180; 
+    }
 
-.content {
-  display: flex;
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 30px;
-  background-color: #dbc3df;
-  /* background-color: #f7e4e8; */
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-  position: relative;
-}
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin: 30px auto;
+      padding: 25px 30px;
+      background-color: #dbc3df;
+      border-radius: 15px;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
+      position: relative;
+    }
 
-.image-section {
-  flex: 0 0 300px;
-  padding-right: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start; 
+    }
 
-.image-section img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
-}
+    .image-section {
+      flex: 0 0 300px;
+      padding-right: 25px;
+      display: flex;
+      justify-content: flex-start; 
+      flex-direction: column;
+      margin-top: 10px; 
+    }
 
-.text-section {
-  flex: 1;
-}
+    .image-section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 0; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-.text {
-  display: inline-block;
-  margin-right: 8px;
-}
+    .text-section {
+      flex: 1;
+      min-width: 250px;
+      line-height: 1.8em;
+      margin-left: 20px;
+    }
 
-.heart-svg {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
+    .text-section p, .text-section pre {
+      color: #5a1f5b;
+      font-weight: 500;
+      line-height: 1.8em;
+      margin-bottom: 1.4em;
+      max-width: 600px;
+    }
 
-.name {
-  color: #7d3180;; /* color: #ff9d9d; */
-  width: "100%";
-  text-align: center;
-  margin: 8px;
-  font-size: 4.4em;
-  padding-left: 0.7em;
-  font-family: 'Bigelow';
-}
+    .text-section a {
+      color: #7d3180;
+      text-decoration: underline;
+    }
 
-</style>
+    .text-section strong {
+      color: #7d3180; 
+      font-weight: 600;
+    }
+
+    .text-section .degree {
+      color: #5a1a4d;
+      font-weight: 600;
+    }
+
+    .text-section h2 {
+      color: #7d3180;
+      font-weight: 600;
+      border-bottom: 2px solid #7d3180;
+      padding-bottom: 5px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.6em;
+    }
+
+    .heart-svg {
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      animation: heartbeat 2s infinite;
+      transform-origin: center;
+      transition: transform 0.2s;
+    }
+
+    .heart-svg:hover {
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25%, 75% { transform: scale(1.08); }
+      50% { transform: scale(1); }
+    }
+
+    .name {
+      color: #7d3180;
+      text-align: center;
+      margin: 8px 0 25px 0;
+      font-size: 4.4em;
+      font-family: 'Bigelow';
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+      }
+
+      nav ul li {
+        float: none; 
+      }
+
+      nav ul li a {
+        text-align: left;
+        padding: 10px;
+      }
+
+      .name {
+        font-size: 2.5em; 
+      }
+
+      .image-section {
+        flex: 1 1 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+      }
+
+      .text-section {
+        flex: 1 1 100%;
+        margin-left: 0;
+      }
+
+      .text-section h2 {
+        font-size: 1.4em;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-  <h1 id="name" class="name">Ekaterina Zhuchko
-    <img class="heart-svg" src="heart.svg" alt="Embedded SVG" />
+  <h1 id="name" class="name">
+    Ekaterina Zhuchko
+    <img class="heart-svg" src="heart.svg" alt="Embedded Heart" />
   </h1>
+
   <div class="content">
- <div class="image-section">
-    <img src="./images/me.jpg">  
+    <div class="image-section">
+      <img src="./images/me.jpg" alt="Ekaterina Zhuchko">
+    </div>
+    <div class="text-section">
+      <p>Hello, I’m Kat! I am currently a PhD student in the <a href="https://cs.ioc.ee/lsg/">Logic and Semantics Group</a> at Tallinn University of Technology under the supervision of Margus Veanes, Hendrik Maarand and Hellis Tamm.
+      My main research interests are in automata theory and formal methods.</p>
+      <p>Check out my <a href="publications.html">published works</a>.</p>
+
+      <h2 id="education">🎓 Education</h2>
+      <p><code>2019-2022.</code><br>
+        <span class="degree">Master’s @ 🇪🇪 Tallinn University of Technology &amp; University of Tartu.</span></p>
+      <p><code>September 2022-now.</code><br>
+        <span class="degree">PhD @ 🇪🇪 Tallinn University of Technology.</span></p>
+
+      <h2 id="contact-details">💌 Contact details</h2>
+      <pre>ekaterina [dot] zhuchko [at] taltech [dot] ee</pre>
+    </div>
   </div>
-  <div class="text-section">
-    <h2 id="about-me">💭 About me</h2>
-    <p>Hello, I’m Kat! I am currently a PhD student in the <a href="https://compose.ioc.ee/">Laboratory for Compositional Systems and Methods</a> at Tallinn University of Technology under the supervision of Hellis Tamm and Paweł Sobociński.
-       My main research interests are in automata theory and formal methods.</p>
-    <p>Check out my <a href="publications.html">published works</a>.</p>
-    <h2 id="education">🎓 Education</h2>
-    <p><code>2019-2022.</code><br>
-      <strong>Master’s degree @ 🇪🇪 Tallinn University of Technology &amp; University of Tartu.</strong></p>
-    <p><code>September 2022-now.</code><br>
-      <strong>PhD @ 🇪🇪 Tallinn University of Technology.</strong></p>
-    <h2 id="contact-details">💌 Contact details</h2>
-    <pre>ekaterina [dot] zhuchko [at] taltech [dot] ee</pre>
-  </div></div>
+
   <nav>
     <ul>
-        <!-- <li><a href="index.html">About Me</a></li> -->
-        <li><a href="publications.html">Publications</a></li>
+      <li><a href="publications.html">Publications</a></li>
     </ul>
   </nav>
 </div>

@@ -3,7 +3,13 @@
 <head>
     <title>Publications</title>
     <style>
-        /* Navigation Bar Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ac98b2;
+            margin: 0;
+            padding: 0;
+        }
+
         nav ul {
             list-style-type: none;
             margin: 0;
@@ -27,47 +33,142 @@
         nav ul li a:hover {
             background-color: #7d3180; 
         }
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-          background-color: #ac98b2;
-        }
+
         .container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 20px;
-          margin-top: 30px;
-          background-color: #dbc3df;
-          border-radius: 10px;
-          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-          position: relative;
+            max-width: 900px;
+            width: 90%;         
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #dbc3df; 
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        h2 {
+            text-align: center;
+            margin: 15px 0 15px 0; 
+            color: #7d3180;
+            font-size: 2.5em; 
+        }
+
+        h3 {
+            border-bottom: 2px solid #7d3180;
+            padding-bottom: 5px;
+            color: #5a1f5b;
+            margin-top: 40px;
+        }
+
+        .publication-card {
+            background-color: #d6b8d1;
+            border-left: 4px solid #7d3180;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        
+        .publication-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .publication-card a {
+            margin-right: 12px; 
+            text-decoration: none;
+            color: #7d3180; 
+            font-weight: bold;
+        }
+        
+        .publication-card a:hover {
+            text-decoration: underline;
+            color: #4a154a; 
+        }
+
+        .my-name {
+            color: #7d3180;  
+            font-weight: bold; 
+        }
+
+        /* ------------------ MOBILE FRIENDLY STYLES ------------------ */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;      
+                padding: 10px;  
+                margin: 15px auto;
+            }
+
+            nav ul li {
+                float: none;      
+            }
+
+            nav ul li a {
+                text-align: left; 
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5em; 
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            .publication-card {
+                padding: 10px;    
+            }
+
+            .publication-card a {
+                display: inline-block;
+                margin-bottom: 5px; 
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="publications">
-            <h2>My publications</h2>
-            <ul>
-                <li><i>E. Zhuchko</i>, H. Maarand, M. Veanes, and G. Ebner. (2025). <b>Finiteness of Symbolic Derivatives in Lean</b>. ITP ’25 (Reykjavik, Sept. 2025). 
-                    <a href="pdfs/fin.pdf">pdf</a> <a href=https://github.com/ezhuchko/finiteness-derivatives>code</a></li>
-                <li>I. Varatalu, M. Veanes, <i>E. Zhuchko</i>, and J. Ernits. (2025). <b>Regex Decision Procedures in Extended RE#</b>. CAV ’25 (Zagreb, Jul. 2025).  
-                    <a href="pdfs/resolver.pdf">pdf</a> <a href=https://github.com/ezhuchko/re-sharp-smt>code</a></li> 
-                <li>M. Veanes, T. Ball, G. Ebner, and <i>E. Zhuchko</i>. (2025). <b>Symbolic Automata: Omega-
-                    Regularity Modulo Theories</b>. POPL ’25 (Denver, Jan. 2025).  
-                    <a href="pdfs/symbolicautomata.pdf">pdf</a> <a href=https://github.com/ezhuchko/RLTL-derivatives>code</a></li>
-                <li><i>E. Zhuchko</i>, M. Veanes, and G. Ebner. (2024). <b>Lean Formalization of Extended Regular Expression
-                    Matching with Lookarounds</b>. CPP ’24 (London, Jan. 2024). 
-                    <a href="pdfs/regexinlean.pdf">pdf</a> <a href=https://github.com/ezhuchko/extended-regexes>code</a></li>
-                <li>D. Firsov, S. Laur, and <i>E. Zhuchko</i>. (2022). <b>Unsatisfiability of Comparison-Based
-                    Non-Malleability for Commitments</b>. ICTAC ’22 (Tbilisi, Sept. 2022). 
-                    <a href="pdfs/nonmallcommitments.pdf">pdf</a> <a href=https://github.com/dfirsov/simulation-based-non-malleabiltiy-analysis>code</a> </li>
-            </ul>
+        <h2>My Publications</h2>
+
+        <h3>2025</h3>
+        <div class="publication-card">
+            <span class="my-name">E. Zhuchko</span>, H. Maarand, M. Veanes, and G. Ebner. <br>
+            <em>"Finiteness of Symbolic Derivatives in Lean"</em>. ITP ’25. <br>
+            <a href="pdfs/fin.pdf" target="_blank">[PDF]</a>
+            <a href="https://github.com/ezhuchko/finiteness-derivatives" target="_blank">[Code]</a>
         </div>
+        <div class="publication-card">
+            I. Varatalu, M. Veanes, <span class="my-name">E. Zhuchko</span>, and J. Ernits. <br>
+            <em>"Regex Decision Procedures in Extended RE#"</em>. CAV ’25. <br>
+            <a href="pdfs/resolver.pdf" target="_blank">[PDF]</a>
+            <a href="https://github.com/ezhuchko/re-sharp-smt" target="_blank">[Code]</a>
+        </div>
+        <div class="publication-card">
+            M. Veanes, T. Ball, G. Ebner, and <span class="my-name">E. Zhuchko</span>. <br>
+            <em>"Symbolic Automata: Omega-Regularity Modulo Theories"</em>. POPL ’25. <br>
+            <a href="pdfs/symbolicautomata.pdf" target="_blank">[PDF]</a>
+            <a href="https://github.com/ezhuchko/RLTL-derivatives" target="_blank">[Code]</a>
+        </div>
+
+        <h3>2024</h3>
+        <div class="publication-card">
+            <span class="my-name">E. Zhuchko</span>, M. Veanes, and G. Ebner. <br>
+            <em>"Lean Formalization of Extended Regular Expression Matching with Lookarounds"</em>. CPP ’24. <br>
+            <a href="pdfs/regexinlean.pdf" target="_blank">[PDF]</a>
+            <a href="https://github.com/ezhuchko/extended-regexes" target="_blank">[Code]</a>
+        </div>
+
+        <h3>2022</h3>
+        <div class="publication-card">
+            D. Firsov, S. Laur, and <span class="my-name">E. Zhuchko</span>. <br>
+            <em>"Unsatisfiability of Comparison-Based Non-Malleability for Commitments"</em>. ICTAC ’22. <br>
+            <a href="pdfs/nonmallcommitments.pdf" target="_blank">[PDF]</a>
+            <a href="https://github.com/dfirsov/simulation-based-non-malleabiltiy-analysis" target="_blank">[Code]</a>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Main</a></li>
             </ul>
-        </nav>                
+        </nav>
     </div>
 </body>
 </html>
