@@ -15,7 +15,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #ab85ad; 
+      background-color: #ab85ad;
     }
 
     nav ul li {
@@ -24,15 +24,14 @@
 
     nav ul li a {
       display: block;
-      color: white;
+      color: #f5e6f5;
+      font-size: 1em;
+      font-weight: 500;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
     }
 
-    nav ul li a:hover {
-      background-color: #7d3180; 
-    }
 
     .container {
       max-width: 900px;
@@ -175,7 +174,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #ab85ad; 
+            background-color: #ab85ad;
         }
 
         nav ul li {
@@ -184,15 +183,14 @@
 
         nav ul li a {
             display: block;
-            color: white;
+            color: #f5e6f5;
+            font-size: 1em;
+            font-weight: 500;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
-        nav ul li a:hover {
-            background-color: #7d3180; 
-        }
         
         h2 {
             margin: 15px 0 15px 0; 
@@ -202,7 +200,9 @@
 
         #publications-title {
             text-align: center;
-        } 
+            font-size: 1.6em;
+            font-weight: 600;
+        }
 
         h3 {
             border-bottom: 2px solid #7d3180;
